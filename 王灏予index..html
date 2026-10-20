@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <meta charset="UTF-8">
+  <title>我的个人主页</title>
+  <style>
+    body {
+        margin: 0;
+        padding-top: 60px; 
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4; 
+    }
+    
+    .navbar {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: 60px;
+        background-color: black; 
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 1000; 
+        box-sizing: border-box;
+    }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+
+    .box {
+        background-color: white;         
+        border: 1px solid #ddd;         
+        border-radius: 10px;            
+        padding: 20px;                  
+        margin-bottom: 20px;            
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    }
+
+    h1 {
+        color: blue;
+        margin-top: 0;
+    }
+    h2 {
+        color: #333;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    
+    .hobby-box {
+        background-color: brown;
+        color: white;
+        border: none;
+    }
+    .hobby-box h2 {
+        color: white;
+        border-bottom: none;
+    }
+
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+        margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+ 
+  <nav class="navbar">
+    <a href="#">首页</a>
+    <a href="#">关于我</a>
+    <a href="#">我的兴趣</a>
+    <a href="https://github.com">我的github</a>
+  </nav>
+
+ 
+  <main>
+   
+    <div class="box">
+        <h1>你好，我是王灏予</h1>
+        <p>欢迎来到我的个人主页！</p>
+    </div>
+
+    
+    <div class="box">
+        <h2>关于我</h2>
+        <p>来自四川南充，年龄18岁，生日6月16日</p>
+       <img src="南部avatar.jpg.jpg">
+    </div>
+
+    
+    <div class="box hobby-box">
+        <h2>我的兴趣</h2>
+        <ul>
+            <li>玩游戏</li>
+            <li>打羽毛球</li>
+        </ul>
+    </div>
+
+    
+    <div class="box">
+        <a href="https://github.com">我的github</a>
+    </div>
+  </main>
+</body>
+</html>
